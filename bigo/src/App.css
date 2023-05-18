@@ -247,7 +247,7 @@ p.danger {
 
 
 
-/************ Events-card Css ************/
+/************ contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -332,4 +332,24 @@ p.danger {
 
 .contact form button:hover::before {
   width: 100%;
+}
+
+.message {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  margin: 0 0 8px 0;
+}
+
+.success {
+  color: #44ff00 !important;
+}
+
+.danger {
+  color: #ff0000 !important;
+  background: rgba(48, 48, 48, 0.9);
 }
