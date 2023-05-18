@@ -1,7 +1,7 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { useState } from "react";
+// events backup
 
-import { EventCard } from "./EventCard";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { EventCard } from "../EventCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import projImg1 from "../assets/img/events-img1.png";
@@ -64,11 +64,6 @@ export const Events = () => {
       items: 1,
     },
   };
-  const [activeTab, setActiveTab] = useState("first");
-
-  const handleTabSelect = (tabKey) => {
-    setActiveTab(tabKey);
-  };
 
   return (
     <section className="events" id="events">
@@ -91,12 +86,7 @@ export const Events = () => {
                     type specimen book.
                   </p>
 
-                  <Tab.Container
-                    id="events-tabs"
-                    // defaultActiveKey="first"
-                    activeKey={activeTab}
-                    onSelect={handleTabSelect}
-                  >
+                  <Tab.Container id="events-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center"
@@ -119,43 +109,37 @@ export const Events = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
-                        {activeTab === "first" && (
-                          <Carousel
-                            responsive={responsive}
-                            infinite={true}
-                            className="owl-carousel owl-theme event-slider"
-                          >
-                            {events.map((events, index) => {
-                              return <EventCard key={index} {...events} />;
-                            })}
-                          </Carousel>
-                        )}
+                        <Carousel
+                          responsive={responsive}
+                          infinite={true}
+                          className="owl-carousel owl-theme event-slider"
+                        >
+                          {events.map((events, index) => {
+                            return <EventCard key={index} {...events} />;
+                          })}
+                        </Carousel>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        {activeTab === "second" && (
-                          <Carousel
-                            responsive={responsive}
-                            infinite={true}
-                            className="owl-carousel owl-theme event-slider"
-                          >
-                            {events.map((events, index) => {
-                              return <EventCard key={index} {...events} />;
-                            })}
-                          </Carousel>
-                        )}
+                        <Carousel
+                          responsive={responsive}
+                          infinite={true}
+                          className="owl-carousel owl-theme event-slider"
+                        >
+                          {events.map((events, index) => {
+                            return <EventCard key={index} {...events} />;
+                          })}
+                        </Carousel>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        {activeTab === "third" && (
-                          <Carousel
-                            responsive={responsive}
-                            infinite={true}
-                            className="owl-carousel owl-theme event-slider"
-                          >
-                            {events.map((events, index) => {
-                              return <EventCard key={index} {...events} />;
-                            })}
-                          </Carousel>
-                        )}
+                        <Carousel
+                          responsive={responsive}
+                          infinite={true}
+                          className="owl-carousel owl-theme event-slider"
+                        >
+                          {events.map((events, index) => {
+                            return <EventCard key={index} {...events} />;
+                          })}
+                        </Carousel>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

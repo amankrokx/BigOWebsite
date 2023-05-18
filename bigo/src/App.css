@@ -197,6 +197,11 @@ p.danger {
   transition: 0.4s ease-in-out;
 }
 
+.event-slider .item {
+  width: 95%;
+  margin: 0 auto 15px auto;
+}
+
 .events-imgbx:hover::before {
   height: 100%;
 }
@@ -239,6 +244,8 @@ p.danger {
   right: 0;
   z-index: -4;
 }
+
+
 
 /************ Events-card Css ************/
 .contact {
