@@ -9,6 +9,7 @@ import { Members } from "./components/Members";
 import { Footer } from "./components/Footer";
 
 function App() {
+  document.title = "BigO";
   return (
     <div className="App">
       <NavBar />
