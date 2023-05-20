@@ -42,10 +42,13 @@ OAuth2Client.getAccessToken().then(token => {
 //   logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
+// add runWith
 
 exports.sendMail = onRequest(
     {
         cors: ["bigo-3ac05.web.app", "bigo-3ac05.firebaseapp.com", "localhost:5000"],
+        timeoutSeconds: 10,
+        maxInstances: 2
     },
     async (request, response) => {
         try {
