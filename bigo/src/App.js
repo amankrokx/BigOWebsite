@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,6 +11,13 @@ import { Footer } from "./components/Footer";
 
 function App() {
   document.title = "BigO";
+  useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  }, []);
   return (
     <div className="App">
       <NavBar />
