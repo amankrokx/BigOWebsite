@@ -12,22 +12,19 @@
     }
   ],
   "hosting": {
-    "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-        {
-            "source": "/apiSendMail",
-            "function": "sendMail"
-        },
-        {
-            "source": "**",
-            "destination": "/index.html"
-        }
-    ]
+      "site": "bigo-rnsit",
+      "public": "build",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+          {
+              "source": "/apiSendMail",
+              "function": "sendMail"
+          },
+          {
+              "source": "**",
+              "destination": "/index.html"
+          }
+      ]
   },
   "emulators": {
     "functions": {
