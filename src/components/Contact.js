@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
 import "animate.css";
+import { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import contactImg from "../assets/img/contact-img.svg";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -26,7 +26,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("/api/contact", {
+    let response = await fetch("/apiSendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -36,7 +36,7 @@ export const Contact = () => {
     let result = await response.json();
     setButtonText("Send");
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
     } else {
       setStatus({

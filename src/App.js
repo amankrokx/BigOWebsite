@@ -1,13 +1,12 @@
-import { useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavBar } from "./components/NavBar";
+import { useEffect } from "react";
+import "./App.css";
 import { Banner } from "./components/Banner";
-import { Events } from "./components/Events";
 import { Contact } from "./components/Contact";
-import { Members } from "./components/Members";
+import { Events } from "./components/Events";
 import { Footer } from "./components/Footer";
+import { Members } from "./components/Members";
+import { NavBar } from "./components/NavBar";
 
 function App() {
   document.title = "BigO";
