@@ -4,44 +4,139 @@ import { useState } from "react";
 import { EventCard } from "./EventCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import projImg1 from "../assets/img/events-img1.png";
-import projImg2 from "../assets/img/events-img2.png";
-import projImg3 from "../assets/img/events-img3.png";
+
+//past
+import eveImg1 from "../assets/imgs/events/past/1.jpg";
+import eveImg2 from "../assets/imgs/events/past/2.jpg";
+import eveImg3 from "../assets/imgs/events/past/3.jpg";
+import eveImg4 from "../assets/imgs/events/past/4.jpg";
+import eveImg5 from "../assets/imgs/events/past/5.jpeg";
+import eveImg6 from "../assets/imgs/events/past/6.jpeg";
+import eveImg7 from "../assets/imgs/events/past/7.jpeg";
+import eveImg8 from "../assets/imgs/events/past/8.jpeg";
+import eveImg9 from "../assets/imgs/events/past/9.jpg";
+import eveImg10 from "../assets/imgs/events/past/10.jpg";
+import eveImg11 from "../assets/imgs/events/past/11.jpg";
+import eveImg12 from "../assets/imgs/events/past/12.jpeg";
+import eveImg13 from "../assets/imgs/events/past/13.jpg";
+import eveImg14 from "../assets/imgs/events/past/14.jpeg";
+
+//live
+import emptyImg from "../assets/imgs/events/live/empty.png";
+
+//upcoming
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Events = () => {
-  const events = [
+  const eventslive = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
+    },
+  ];
+  const eventsupcoming = [
+    {
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Nope nothing here for now",
+      description: "Touch grass, watch a movie...maybe finally..",
+      imgUrl: emptyImg,
+    },
+  ];
+  const eventspast = [
+    {
+      title: "Typing Contest",
+      description: "21st May, 2023",
+      // link: "#",
+      // linkdisplay: "link to event",
+      imgUrl: eveImg14,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Strategic Plans for Placement & Internships Talk",
+      description: "27th December, 2022",
+      imgUrl: eveImg13,
+    },
+    {
+      title: "Great Coding Challenge 3.0",
+      description: "9th December, 2022",
+      imgUrl: eveImg12,
+    },
+    {
+      title: "Session on Git and GitHub",
+      description: "24th November, 2022",
+      imgUrl: eveImg11,
+    },
+    {
+      title: "Session on Competitive Programming",
+      description: "9th November,2022",
+      imgUrl: eveImg10,
+    },
+    {
+      title: "Algowin 1.0",
+      description: "5th November,2022",
+      imgUrl: eveImg9,
+    },
+    {
+      title: "Recruiting",
+      description: "11th July,2022",
+      imgUrl: eveImg8,
+    },
+    {
+      title: "Team Programming Contest 3.0",
+      description: "10th June,2022",
+      imgUrl: eveImg7,
+    },
+    {
+      title: "Code Wiser",
+      description: "5th April,2022",
+      imgUrl: eveImg6,
+    },
+    {
+      title: "Recruiting-non-tech",
+      description: "5th November,2022",
+      imgUrl: eveImg5,
+    },
+    {
+      title: "Team Programming Contest 2.0",
+      description: "16th December,2021",
+      imgUrl: eveImg4,
+    },
+    {
+      title: "Great Coding Challenge",
+      description: "1st September,2021",
+      imgUrl: eveImg3,
+    },
+    {
+      title: "Competitive Programming 101",
+      description: "24th August,2021",
+      imgUrl: eveImg2,
+    },
+    {
+      title: "Github101",
+      description: "23rd August,2021",
+      imgUrl: eveImg1,
     },
   ];
 
@@ -125,7 +220,7 @@ export const Events = () => {
                             infinite={true}
                             className="owl-carousel owl-theme event-slider"
                           >
-                            {events.map((events, index) => {
+                            {eventslive.map((events, index) => {
                               return <EventCard key={index} {...events} />;
                             })}
                           </Carousel>
@@ -138,7 +233,7 @@ export const Events = () => {
                             infinite={true}
                             className="owl-carousel owl-theme event-slider"
                           >
-                            {events.map((events, index) => {
+                            {eventsupcoming.map((events, index) => {
                               return <EventCard key={index} {...events} />;
                             })}
                           </Carousel>
@@ -151,7 +246,7 @@ export const Events = () => {
                             infinite={true}
                             className="owl-carousel owl-theme event-slider"
                           >
-                            {events.map((events, index) => {
+                            {eventspast.map((events, index) => {
                               return <EventCard key={index} {...events} />;
                             })}
                           </Carousel>

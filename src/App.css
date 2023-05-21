@@ -111,7 +111,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 20%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -490,6 +490,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
+.events-txtx a {
+  color: #00ffcc;
+  font-size: 30px;
+  text-decoration: none
+}
+
+.events-txtx a:hover {
+  color: #039e7f;
+  font-size: 30px;
+  text-decoration: none
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -690,11 +702,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
+/*
 .mem-imgbx {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
+  border: 2px solid ;
 }
 
 .mem-imgbx::before {
@@ -728,7 +742,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .mem-txtx h5 {
-  font-size: 30px;
+  font-size: px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -739,6 +753,75 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.8px;
+}
+
+*/
+
+.mem-imgbx {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgb(157, 0, 255);
+  transition: .6s;
+  margin-bottom: 24px;
+  overflow: hidden;
+  /* margin: 5px !important; */
+}
+
+.mem-imgbx:hover {
+  border-radius: 10px;
+  height: 220px;
+}
+
+.mem-imgbx .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+}
+
+.mem-imgbx:hover .img {
+  border-radius: 10px;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+}
+
+.mem-imgbx:hover img {
+  border-radius: 10px;
+}
+
+.mem-txtx {
+  text-align: center;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: .6s;
+}
+
+.mem-imgbx:hover .mem-txtx {
+  opacity: 1;
+}
+
+.mem-txtx h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.1em;
+}
+
+.mem-txtx span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c52a1;
+  /* margin: 2px 0 9px 0; */
 }
 
 .background-image-right {
@@ -760,7 +843,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .footer img {
-  width: 26%;
+  width: 50%;
 }
 
 .footer p {
