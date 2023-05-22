@@ -71,7 +71,7 @@ export const Banner = () => {
                     {`The`}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
+                      dataPeriod="500"
                       data-rotate='[ "Competative Coding Club", "Developers Club" ]'
                     >
                       <span className="wrap">{text}</span>
@@ -79,11 +79,19 @@ export const Banner = () => {
                     {"of RNSIT "}
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Welcome to BigO, the premier competitive programming club of
+                    RNSIT (R. N. Shetty Institute of Technology). With a passion
+                    for coding and a drive for excellence, BigO has established
+                    itself as a prominent platform for aspiring programmers. Our
+                    vibrant community fosters a spirit of collaboration and
+                    innovation, where members come together to participate in
+                    thrilling coding contests, engage in insightful workshops,
+                    and delve into enlightening technical talks. Whether you are
+                    a beginner taking your first steps in the world of
+                    programming or an experienced coder seeking to sharpen your
+                    skills, BigO provides the ideal environment to grow, learn,
+                    and excel. Join us on this exhilarating journey of coding
+                    prowess and unlock your true potential with BigO.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

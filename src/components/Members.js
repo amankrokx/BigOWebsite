@@ -212,11 +212,21 @@ export const Members = () => {
                 >
                   <h2>Members</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    The strength of BigO lies in its exceptional members who
+                    form a tight-knit community of passionate coders. As a
+                    member of BigO, you become a part of a dynamic group of
+                    individuals driven by a shared love for programming. Whether
+                    you are a beginner looking for guidance or an experienced
+                    coder willing to share your knowledge, BigO offers a
+                    welcoming and supportive environment. Our members actively
+                    engage in collaborative coding sessions, mentorship
+                    programs, and knowledge-sharing initiatives, fostering a
+                    culture of continuous learning and growth. By joining BigO,
+                    you gain access to a vast network of like-minded
+                    individuals, enabling you to connect, collaborate, and build
+                    lasting friendships with fellow coding enthusiasts.
+                    Together, we strive to inspire and empower each other,
+                    unlocking the true potential within ourselves.
                   </p>
                   <Tab.Container id="members-tabs" defaultActiveKey="first">
                     <Nav

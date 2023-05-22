@@ -179,11 +179,20 @@ export const Events = () => {
                 >
                   <h2>events</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Discover a world of exciting events with BigO! We pride
+                    ourselves on organizing a diverse range of programming
+                    competitions, workshops, and technical talks that cater to
+                    all skill levels and interests. Our coding contests are
+                    designed to challenge and inspire participants, providing an
+                    opportunity to showcase their problem-solving abilities and
+                    compete against top talent. Join our workshops to learn
+                    valuable coding techniques, get an insight on various
+                    technical skills. Additionally, our engaging technical talks
+                    offer a platform to delve into cutting-edge technologies and
+                    trends, allowing you to expand your knowledge and stay ahead
+                    in the ever-evolving world of programming. Stay tuned for
+                    our upcoming events and be a part of the thrilling BigO
+                    experience!
                   </p>
 
                   <Tab.Container
