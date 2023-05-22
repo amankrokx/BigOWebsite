@@ -490,14 +490,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 
-.events-txtx a {
-  color: #00ffcc;
+.events-txtx div {
+  margin-top: 55px;
   font-size: 30px;
   text-decoration: none
 }
 
+.events-txtx a {
+  color: #ffffff;
+}
+
 .events-txtx a:hover {
-  color: #039e7f;
+  color: #00ffcc;
   font-size: 30px;
   text-decoration: none
 }

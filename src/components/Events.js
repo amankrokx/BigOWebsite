@@ -69,8 +69,7 @@ export const Events = () => {
     {
       title: "Typing Contest",
       description: "21st May, 2023",
-      // link: "#",
-      // linkdisplay: "link to event",
+      link: "#",
       imgUrl: eveImg14,
     },
     {

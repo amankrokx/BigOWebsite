@@ -1,12 +1,6 @@
 import { Col } from "react-bootstrap";
-
-export const EventCard = ({
-  title,
-  description,
-  link,
-  linkdisplay,
-  imgUrl,
-}) => {
+import { BoxArrowUpRight } from "react-bootstrap-icons";
+export const EventCard = ({ title, description, link, imgUrl }) => {
   return (
     // <Col size={12} sm={6} md={4}>
     <div className="item">
@@ -15,9 +9,13 @@ export const EventCard = ({
         <div className="events-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-          <div>
-            <a href={link}>{linkdisplay}</a>
-          </div>
+          {link && (
+            <div>
+              <a href={link}>
+                <BoxArrowUpRight size={60} />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
