@@ -32,7 +32,7 @@ export const Footer = () => {
               </button>
             </a>
 
-            <p>Copyright 2022. All Rights Reserved - AUB&SAM</p>
+            <p>Copyright 2023. All Rights Reserved -BigO</p>
           </Col>
         </Row>
       </Container>

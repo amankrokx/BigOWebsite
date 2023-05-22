@@ -20,6 +20,7 @@ import eveImg11 from "../assets/imgs/events/past/11.jpg";
 import eveImg12 from "../assets/imgs/events/past/12.jpeg";
 import eveImg13 from "../assets/imgs/events/past/13.jpg";
 import eveImg14 from "../assets/imgs/events/past/14.jpeg";
+import eveImg15 from "../assets/imgs/events/past/15.jpeg";
 
 //live
 import emptyImg from "../assets/imgs/events/live/empty.png";
@@ -69,7 +70,6 @@ export const Events = () => {
     {
       title: "Typing Contest",
       description: "21st May, 2023",
-      link: "#",
       imgUrl: eveImg14,
     },
     {
@@ -80,6 +80,7 @@ export const Events = () => {
     {
       title: "Great Coding Challenge 3.0",
       description: "9th December, 2022",
+      link: "https://www.hackerrank.com/great-coding-challenge-3-0",
       imgUrl: eveImg12,
     },
     {
@@ -95,21 +96,25 @@ export const Events = () => {
     {
       title: "Algowin 1.0",
       description: "5th November,2022",
+      link: "https://www.hackerrank.com/algowin-1-0",
       imgUrl: eveImg9,
     },
     {
       title: "Recruiting",
       description: "11th July,2022",
+      link: "https://www.hackerrank.com/gcc2",
       imgUrl: eveImg8,
     },
     {
       title: "Team Programming Contest 3.0",
       description: "10th June,2022",
+      link: "https://www.hackerrank.com/team-programming-contest-3-0",
       imgUrl: eveImg7,
     },
     {
       title: "Code Wiser",
       description: "5th April,2022",
+      link: "https://www.hackerrank.com/code-wiser",
       imgUrl: eveImg6,
     },
     {
@@ -120,11 +125,19 @@ export const Events = () => {
     {
       title: "Team Programming Contest 2.0",
       description: "16th December,2021",
+      link: "https://www.hackerrank.com/tpc-2-0-sem-3",
       imgUrl: eveImg4,
+    },
+    {
+      title: "Team Programming Contest 1.0",
+      description: "30th October,2021",
+      link: "https://www.hackerrank.com/team-programming-contest-1-0",
+      imgUrl: eveImg15,
     },
     {
       title: "Great Coding Challenge",
       description: "1st September,2021",
+      link: "http://www.hackerrank.com/great-coding-challenge-gcc",
       imgUrl: eveImg3,
     },
     {
@@ -166,6 +179,7 @@ export const Events = () => {
 
   return (
     <section className="events" id="events">
+      <p style={{ color: "black" }}>Aman, Ajit, Sinchana</p>
       <Container>
         <Row>
           <Col size={12}>
@@ -268,6 +282,7 @@ export const Events = () => {
           </Col>
         </Row>
       </Container>
+      <p style={{ color: "black" }}>AUB&SAM</p>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
